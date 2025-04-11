@@ -1,0 +1,60 @@
+#theme-toggle {
+    display: none;
+}
+
+.theme-toggle-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.toggle-label {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.toggle-label::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 5px;
+    transition: transform 0.5s ease;
+    animation: slideOff 0.5s ease;
+}
+
+#theme-toggle:checked + .theme-toggle-container .toggle-label {
+    background-color: #333;
+}
+
+#theme-toggle:checked + .theme-toggle-container .toggle-label::before {
+    transform: translateX(25px);
+    animation: slideOn 0.5s ease;
+}
+
+@keyframes slideOn {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(25px);
+    }
+}
+
+@keyframes slideOff {
+    from {
+        transform: translateX(25px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
