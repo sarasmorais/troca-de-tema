@@ -16,7 +16,7 @@
     display: block;
     position: relative;
     cursor: pointer;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.3s ease;
 }
 
 .toggle-label::before {
@@ -28,8 +28,8 @@
     position: absolute;
     top: 2.5px;
     left: 5px;
-    transition: transform 0.5s ease;
-    animation: slideOff 0.5s ease;
+    transition: transform 0.3s ease;
+    animation: slideOff 0.3s ease;
 }
 
 #theme-toggle:checked + .theme-toggle-container .toggle-label {
@@ -38,7 +38,7 @@
 
 #theme-toggle:checked + .theme-toggle-container .toggle-label::before {
     transform: translateX(25px);
-    animation: slideOn 0.5s ease;
+    animation: slideOn 0.3s ease;
 }
 
 @keyframes slideOn {
