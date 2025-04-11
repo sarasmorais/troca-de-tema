@@ -34,15 +34,15 @@
 }
 
 #theme-toggle:checked + .theme-toggle-container .toggle-label {
-    
+    background-color: #62cf62;
     border: 2px solid #00ff00;
-    box-shadow: 0 0 10px 5px #00ff00;
+    box-shadow: 0 0 5px 3px #00ff00;
 }
 
 #theme-toggle:checked + .theme-toggle-container .toggle-label::before {
     transform: translateX(23px);
     animation: slideOn 0.3s ease;
-    box-shadow: 0 0 10px 2px #00ff00;
+    box-shadow: 0 0 5px 1px #00ff00;
 }
 
 @keyframes slideOn {
