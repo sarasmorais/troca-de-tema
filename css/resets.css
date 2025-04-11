@@ -7,10 +7,10 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    min-width: 100vh;
+    min-height: 100vh;
 }
 .page{
-    min-width: 100vh;
+    min-height: 100vh;
     background-color: var(--bg-color);
     color: var(--text-color);
 
