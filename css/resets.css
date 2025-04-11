@@ -19,7 +19,7 @@ body {
     align-items: center;
     padding: 20px;
 
-    transition: background-color var(--transition-time) eae,
+    transition: background-color var(--transition-time) ease,
     color var(--transition-time);
 }
 
